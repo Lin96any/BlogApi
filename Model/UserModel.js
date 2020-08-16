@@ -32,6 +32,11 @@ User.init({
     userPic:{
         type:Sequelize.STRING,
         defaultValue:'http://qiniu.attribute.top/default_blog_pic.png'
+    },
+    phone:{
+        type: Sequelize.STRING(64),
+        defaultValue:'',
+        unique:true
     }
 },
 {

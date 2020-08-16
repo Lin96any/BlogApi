@@ -7,7 +7,7 @@ class HTTPException extends Error {
     }
 }
 class ParameterException extends HTTPException {
-    constructor(msg, errorCode, stateCode) {
+    constructor(msg, stateCode, errorCode,) {
         super()
         this.stateCode = stateCode || 400
         this.msg = msg || '参数错误'
